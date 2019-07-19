@@ -6,7 +6,7 @@ echo -e "\033[35m 1.搭建锐速+BBR+BBR魔改版（by 千影）\033[0m"
 echo
 echo -e "\033[35m 2.搭建多端口酸酸乳（by Toyo）\033[0m"
 echo
-echo -e "\033[35m 3.搭建多用户酸酸乳（by Toyo） \033[0m"
+echo -e "\033[35m 3.sspanel后端对接（by Toyo） \033[0m"
 echo
 echo -e "\033[35m 4.搭建v2ray（by 小嵘）\033[0m"
 echo
