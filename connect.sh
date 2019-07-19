@@ -190,7 +190,7 @@ install_node(){
 	}
 	# 取消文件数量限制
 	sed -i '$a * hard nofile 512000\n* soft nofile 512000' /etc/security/limits.conf
-	read -p "请输入面板的域名或ip(例如:https://www.7colorblog.com or http://114.114.114.114): " Userdomain
+	read -p "请输入面板的域名或ip(例如:https://www.xhei.ml or http://114.114.114.114): " Userdomain
 	read -p "请输入面板的muKey(例如:mupass): " Usermukey
 	read -p "请输入面板的节点id(例如:7): " UserNODE_ID
 	install_ssr_for_each
