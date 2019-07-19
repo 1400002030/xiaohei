@@ -157,7 +157,10 @@ install_node(){
 	clear
 	echo
 	echo "#########################################################################"
-	echo "# One click Install Shadowsocks-Python-Manyuser                         
+	echo "# One click Install Shadowsocks-Python-Manyuser                         "
+	echo "# Github: https://github.com/lizhongnian/ss-panel-v3-mod-node-connect   "
+	echo "# Author: 7colorblog                                                    "
+	echo "# blog: https://www.7colorblog.com                                      "	
 	echo "#########################################################################"
 	echo
 	#Check Root
@@ -221,6 +224,9 @@ install_node(){
 	chmod +x /etc/rc.d/rc.local
 	echo "#########################################################################"
 	echo "# 安装完成，节点即将重启使配置生效                                      "
+	echo "# Github: https://github.com/lizhongnian/ss-panel-v3-mod-node-connect   "
+	echo "# Author: 7colorblog                                                    "
+	echo "# blog: https://www.7colorblog.com                                      "	
 	echo "#########################################################################"
 	reboot now
 }
@@ -229,6 +235,9 @@ install_node_db(){
 	echo
 	echo "#########################################################################"
 	echo "# One click Install Shadowsocks-Python-Manyuser                         "
+	echo "# Github: https://github.com/lizhongnian/ss-panel-v3-mod-node-connect   "
+	echo "# Author: 7colorblog                                                    "
+	echo "# blog: https://www.7colorblog.com                                      "	
 	echo "#########################################################################"
 	echo
 	#Check Root
@@ -299,11 +308,18 @@ install_node_db(){
 	chmod +x /etc/rc.d/rc.local
 	echo "#########################################################################"
 	echo "# 安装完成，节点即将重启使配置生效                                      "
+	echo "# Github: https://github.com/lizhongnian/ss-panel-v3-mod-node-connect   "
+	echo "# Author: 7colorblog                                                    "
+	echo "# blog: https://www.7colorblog.com                                      "
 	echo "#########################################################################"
 	reboot now
 }
 echo
-echo "########################################################################”
+echo "########################################################################"
+echo "# ss-panel-v3-mod后端对接一键脚本                     				 "
+echo "# Github: https://github.com/lizhongnian/ss-panel-v3-mod-node-connect  "
+echo "# Author: 7colorblog                                                   "
+echo "# blog: https://www.7colorblog.com                                     "
 echo "# 请输入1或2选择对接方式                                               "
 echo "# 1  webapi对接选这个!                                                 "
 echo "# 2  db数据库对接选这个!                                               "
