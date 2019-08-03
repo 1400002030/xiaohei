@@ -22,6 +22,8 @@ echo -e "\033[35m 9.一键测试脚本bench（by Zench）\033[0m"
 echo
 echo -e "\033[35m 10.搭建GOST（by supppig）\033[0m"
 echo
+echo -e "\033[35m 11.sspanel前端+后端（by supppig）\033[0m"
+echo
 echo -e  "\033[35m 请选择 [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11 ] 进行下一步安装！\033[0m
  
  >请选择安装类型: "
@@ -51,7 +53,9 @@ chmod +x superspeed.sh
    	9) wget https://raw.githubusercontent.com/oj8k/oj8k/master/ces/ZBench-CN.sh && bash ZBench-CN.sh
 	   ;;
         10) wget https://raw.githubusercontent.com/oj8k/oj8k/master/gost/gost.sh && bash gost.sh
-	   ;;  
+	   ;;
+	11) wget https://raw.githubusercontent.com/1400002030/xiaohei/master/spanel && bash spanel
+	    ;;
     *)  echo -e "\033[31m 错误：只能选择[ 1 , 2 , 3, 4 , 5 , 6 , 7 , 8 , 9 , 10 ]！！\033[0m"
        ;; 
   esac
