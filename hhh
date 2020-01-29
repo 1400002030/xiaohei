@@ -31,7 +31,7 @@ read az
   case $az in
     1) wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
        ;;
-    2) wget -q https://raw.githubusercontent.com/oj8k/oj8k/master/55r/dak55r.sh && bash dak55r.sh 
+    2) wget -q https://raw.githubusercontent.com/1400002030/xiaohei/master/ssr && bash ssr
        ;;
     3) yum -y install wget &&
 wget -N --no-check-certificate https://raw.githubusercontent.com/lizhongnian/ss-panel-v3-mod-node-connect/master/ss-panel-v3-mod-node-connect.sh && 
@@ -40,7 +40,7 @@ bash ss-panel-v3-mod-node-connect.sh
        ;;
     4) cd ~;rm -rf v2ray.*;wget https://raw.githubusercontent.com/oj8k/oj8k/master/v2ray/v2ray.sh;chmod 777 v2ray.sh;./v2ray.sh 2>&1 | tee v2ray.log;rm -rf v2ray.sh && bash v2ray.sh
        ;;
-   	5) wget -q https://233blog.com/v2ray.sh && bash v2ray.sh
+   	5) wget -q https://raw.githubusercontent.com/1400002030/xiaohei/master/v2ray.sh && bash v2ray.sh
 	   ;;
 	6) wget -q https://raw.githubusercontent.com/oj8k/oj8k/master/op/sevpn && bash sevpn
 	   ;;
