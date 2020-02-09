@@ -2,19 +2,19 @@
 cd /root
 clear
 sleep 1
-echo -e "\033[35m 1.搭建锐速+BBR+BBR魔改版（by 千影）\033[0m"
+echo -e "\033[35m 1.搭建加速\033[0m"
 echo
 echo -e "\033[35m 2.搭建多端口酸酸乳（by Toyo）\033[0m"
 echo
 echo -e "\033[35m 3.sspanel后端对接（by Toyo） \033[0m"
 echo
-echo -e "\033[35m 4.搭建v2ray（by 小嵘）\033[0m"
+echo -e "\033[35m 4.搭建v2ray基本版\033[0m"
 echo
-echo -e "\033[35m 5.搭建v2ray （by 233blog） \033[0m"
+echo -e "\033[35m 5.搭建v2rayUI面板 \033[0m"
 echo
-echo -e "\033[35m 6.搭建SEVPN（by 寂寞爱上海）\033[0m"
+echo -e "\033[35m 6.搭建v2ray功能完善版\033[0m"
 echo
-echo -e "\033[35m 7.搭建快云流控（by Dxy修复版）\033[0m"
+echo -e "\033[35m 7.搭建trojan\033[0m"
 echo
 echo -e "\033[35m 8.Superspeed测速（by oldking）\033[0m"
 echo
@@ -29,7 +29,7 @@ echo -e  "\033[35m 请选择 [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11 ] 进�
  >请选择安装类型: "
 read az
   case $az in
-    1) wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+    1) wget -N --no-check-certificate "https://raw.githubusercontent.com/1400002030/xiaohei/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
        ;;
     2) wget -q https://raw.githubusercontent.com/1400002030/xiaohei/master/ssr && bash ssr
        ;;
@@ -38,13 +38,13 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/lizhongnian/ss-
 chmod +x ss-panel-v3-mod-node-connect.sh && 
 bash ss-panel-v3-mod-node-connect.sh 
        ;;
-    4) cd ~;rm -rf v2ray.*;wget https://raw.githubusercontent.com/oj8k/oj8k/master/v2ray/v2ray.sh;chmod 777 v2ray.sh;./v2ray.sh 2>&1 | tee v2ray.log;rm -rf v2ray.sh && bash v2ray.sh
+    4) cd ~;rm -rf v2ray.*;wget https://raw.githubusercontent.com/1400002030/xiaohei/master/v2ray.sh;chmod 777 v2ray.sh;./v2ray.sh 2>&1 | tee v2ray.log;rm -rf v2ray.sh && bash v2ray.sh
        ;;
-   	5) wget -q https://raw.githubusercontent.com/1400002030/xiaohei/master/v2ray.sh && bash v2ray.sh
+   	5) wget -q https://raw.githubusercontent.com/1400002030/xiaohei/master/v2ray-ui.sh && bash v2ray-ui.sh
 	   ;;
-	6) wget -q https://raw.githubusercontent.com/oj8k/oj8k/master/op/sevpn && bash sevpn
+	6) wget -q https://raw.githubusercontent.com/1400002030/xiaohei/master/v2ray-pro.sh && bash v2ray-pro.sh
 	   ;;
-	7) wget --no-check-certificate https://oj8k.ml/kyop/ky.sh&&chmod +x ky.sh&&bash ky.sh
+	7) wget -q https://raw.githubusercontent.com/1400002030/xiaohei/master/trojan.sh && bash trojan.sh
 	   ;;
 	8)  wget https://raw.githubusercontent.com/oj8k/oj8k/master/ces/superspeed.sh
 chmod +x superspeed.sh
