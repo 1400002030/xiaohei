@@ -10,7 +10,7 @@ echo -e "\033[35m 3.sspanel后端对接（by Toyo） \033[0m"
 echo
 echo -e "\033[35m 4.搭建v2ray基本版\033[0m"
 echo
-echo -e "\033[35m 5.搭建v2rayUI面板 \033[0m"
+echo -e "\033[35m 5.搭建v2rayUI面板(无确认直接安装)\033[0m"
 echo
 echo -e "\033[35m 6.搭建v2ray功能完善版\033[0m"
 echo
