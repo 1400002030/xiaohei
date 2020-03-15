@@ -1,3 +1,5 @@
+# 正常使用的ssr搭建脚本
+
 #!/usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
@@ -272,23 +274,23 @@ Set_config_method(){
 	echo -e "请选择要设置的ShadowsocksR账号 加密方式
  ${Green_font_prefix} 1.${Font_color_suffix} none
  ${Tip} 如果使用 auth_chain_a 协议，请加密方式选择 none，混淆随意(建议 plain)
- 
+
  ${Green_font_prefix} 2.${Font_color_suffix} rc4
  ${Green_font_prefix} 3.${Font_color_suffix} rc4-md5
  ${Green_font_prefix} 4.${Font_color_suffix} rc4-md5-6
- 
+
  ${Green_font_prefix} 5.${Font_color_suffix} aes-128-ctr
  ${Green_font_prefix} 6.${Font_color_suffix} aes-192-ctr
  ${Green_font_prefix} 7.${Font_color_suffix} aes-256-ctr
- 
+
  ${Green_font_prefix} 8.${Font_color_suffix} aes-128-cfb
  ${Green_font_prefix} 9.${Font_color_suffix} aes-192-cfb
  ${Green_font_prefix}10.${Font_color_suffix} aes-256-cfb
- 
+
  ${Green_font_prefix}11.${Font_color_suffix} aes-128-cfb8
  ${Green_font_prefix}12.${Font_color_suffix} aes-192-cfb8
  ${Green_font_prefix}13.${Font_color_suffix} aes-256-cfb8
- 
+
  ${Green_font_prefix}14.${Font_color_suffix} salsa20
  ${Green_font_prefix}15.${Font_color_suffix} chacha20
  ${Green_font_prefix}16.${Font_color_suffix} chacha20-ietf
@@ -532,7 +534,7 @@ Write_configuration(){
     "obfs_param": "",
     "speed_limit_per_con": ${ssr_speed_limit_per_con},
     "speed_limit_per_user": ${ssr_speed_limit_per_user},
-
+    
     "additional_ports" : {},
     "timeout": 120,
     "udp_timeout": 60,
@@ -561,7 +563,7 @@ Write_configuration_many(){
     "obfs_param": "",
     "speed_limit_per_con": ${ssr_speed_limit_per_con},
     "speed_limit_per_user": ${ssr_speed_limit_per_user},
-
+    
     "additional_ports" : {},
     "timeout": 120,
     "udp_timeout": 60,
@@ -752,7 +754,7 @@ Install_Libsodium(){
 		echo -e "${Info} 安装依赖..."
 		yum -y groupinstall "Development Tools"
 		echo -e "${Info} 下载..."
-		wget  --no-check-certificate -N "https://github.com/jedisct1/libsodium/releases/download/${Libsodiumr_ver}/libsodium-${Libsodiumr_ver}.tar.gz"
+		wget  --no-check-certificate -N "https://download.libsodium.org/libsodium/releases/libsodium-${Libsodiumr_ver}.tar.gz"
 		echo -e "${Info} 解压..."
 		tar -xzf libsodium-${Libsodiumr_ver}.tar.gz && cd libsodium-${Libsodiumr_ver}
 		echo -e "${Info} 编译安装..."
@@ -763,7 +765,7 @@ Install_Libsodium(){
 		echo -e "${Info} 安装依赖..."
 		apt-get install -y build-essential
 		echo -e "${Info} 下载..."
-		wget  --no-check-certificate -N "https://github.com/jedisct1/libsodium/releases/download/${Libsodiumr_ver}/libsodium-${Libsodiumr_ver}.tar.gz"
+		wget  --no-check-certificate -N "https://download.libsodium.org/libsodium/releases/libsodium-${Libsodiumr_ver}.tar.gz"
 		echo -e "${Info} 解压..."
 		tar -xzf libsodium-${Libsodiumr_ver}.tar.gz && cd libsodium-${Libsodiumr_ver}
 		echo -e "${Info} 编译安装..."
@@ -1181,7 +1183,7 @@ Configure_Server_Speeder(){
  ${Green_font_prefix}4.${Font_color_suffix} 停止 锐速
  ${Green_font_prefix}5.${Font_color_suffix} 重启 锐速
  ${Green_font_prefix}6.${Font_color_suffix} 查看 锐速 状态
- 
+
  注意： 锐速和LotServer不能同时安装/启动！" && echo
 	stty erase '^H' && read -p "(默认: 取消):" server_speeder_num
 	[[ -z "${server_speeder_num}" ]] && echo "已取消..." && exit 1
@@ -1246,7 +1248,7 @@ Configure_LotServer(){
  ${Green_font_prefix}4.${Font_color_suffix} 停止 LotServer
  ${Green_font_prefix}5.${Font_color_suffix} 重启 LotServer
  ${Green_font_prefix}6.${Font_color_suffix} 查看 LotServer 状态
- 
+
  注意： 锐速和LotServer不能同时安装/启动！" && echo
 	stty erase '^H' && read -p "(默认: 取消):" lotserver_num
 	[[ -z "${lotserver_num}" ]] && echo "已取消..." && exit 1
