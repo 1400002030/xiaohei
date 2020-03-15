@@ -24,7 +24,9 @@ echo -e "\033[35m 10.搭建GOST（by supppig）\033[0m"
 echo
 echo -e "\033[35m 11.sspanel前端+后端（by supppig）\033[0m"
 echo
-echo -e  "\033[35m 请选择 [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11 ] 进行下一步安装！\033[0m
+echo -e "\033[35m 12.WordPress+V2ray+Ws+Tls一键安装脚本，已集成破解主题：D8 5.1、DUX 6.0、Git主题！最时尚的科学上网方式！\033[0m"
+echo
+echo -e  "\033[35m 请选择 [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11, 12 ] 进行下一步安装！\033[0m
  
  >请选择安装类型: "
 read az
@@ -55,6 +57,8 @@ chmod +x superspeed.sh
         10) wget https://raw.githubusercontent.com/oj8k/oj8k/master/gost/gost.sh && bash gost.sh
 	   ;;
 	11) wget https://raw.githubusercontent.com/1400002030/xiaohei/master/sspanel && bash sspanel
+	    ;;
+	12) yum install -y wget && wget https://raw.githubusercontent.com/1400002030/xiaohei/master/WP_V2ray_Ws_Tls.sh && chmod +x WP_V2ray_Ws_Tls.sh && ./WP_V2ray_Ws_Tls.sh
 	    ;;
     *)  echo -e "\033[31m 错误：只能选择[ 1 , 2 , 3, 4 , 5 , 6 , 7 , 8 , 9 , 10 ]！！\033[0m"
        ;; 
